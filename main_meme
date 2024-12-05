@@ -1,0 +1,21 @@
+import random as r
+
+meme_dict = {
+            "TIPO_CHILL": "Un Sujeto de agrado increíble representado por un perro antroponorfíco con ropa.",
+            "KNEE_SURGERY": "Un meme de poco sentido sobre el Grinch en color azul esperando su cirugía de rodilla.",
+            "THICK_OF_IT": "Una Cancíon creada por el youtuber KSI de mala calidad usada para burlarse de él.",
+            "DIDDY_PARTY": "Meme sobre un artista errestado por comportamiento sospechsoso en sus fiestas",
+            "BRAIN_ROT": "Lenguaje que usa palabras como Skibidi, Rizz, Gyatt para hacer memes sin sentido"
+            }
+
+print(meme_dict.keys())
+word = input("Escribe una palabra que no entiendas o escribe sorpredeme: ").upper()
+
+if word in meme_dict.keys():
+    print("El significado es:", meme_dict[word])
+elif word == "SORPRENDEME":
+    wordr = r.choice(list(meme_dict.keys()))
+    print("La Palabra es:", wordr, "y el significado es:", meme_dict[wordr])
+else:
+    print("Esta Palabra un no se añade al diccionario.")
+    
